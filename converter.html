@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+
+    <script src="./convertMoney.js"></script>
+    <script src="./convertData.js"></script>
+    <script src="./convertTemperature.js"></script>
+    <script src="./functions.js"></script>
+
+    <link rel="stylesheet" href="converter.css">
+    <link rel="stylesheet" href="sidenav.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d4a52177dc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="sidenav" id="sidenav">
+        <a href="javacript:void(0)" class="btnClose" onclick="closeNav()">&times;</a>
+
+        <p>O que deseja converter?</p>
+        <a href="#" onclick="convertMoney()">Dinheiro</a>
+        <a href="#" onclick="convertData()">Dados</a>
+        <a href="#" onclick="convertTemperature()">Temperatura</a>
+    </nav>
+
+    <div class="navbar">
+        <span onclick="openNav()"><i class="fas fa-bars"></i></span>
+    </div>
+
+
+
+    <div class="mainContent" id="main">
+
+        <header>
+            <h1>Conversão de valores</h1>
+        </header>
+
+        <div class="box">
+            <h2>Escolha um valor para iniciar a conversão</h2>
+            <h3 id="answer"></h3>
+        </div>
+
+
+        <div class="box convertMoney" id="convertMoney">
+            <button onclick="convertDolarToReal()">Dólar para Real</button>
+            <button onclick="convertRealToDolar()">Real para Dólar</button>
+            <button onclick="convertEuroToReal()">Euro para Real</button>
+            <button onclick="convertRealToEuro()">Real para Euro</button>
+            <button onclick="convertBolivarToReal()">Bolívar para Real</button>
+            <button onclick="convertRealToBolivar()">Real para Bolívar</button>
+        </div>
+
+        <div class="box convertData" id="convertData">
+            <button onclick="convertMBtoGB()">MB para GB</button>
+            <button onclick="convertGBtoMB()">GB para MB</button>
+            <button onclick="convertMBtoB()">MB para B</button>
+            <button onclick="convertBtoMB()">B para MB</button>
+            <button onclick="convertBtoBits()">B para bits</button>
+            <button onclick="convertBitstoB()">bits para B</button>
+        </div>
+
+        <div class="box convertTemperature" id="convertTemperature">
+            <button onclick="celsiusToFahrenheit()">Celcius para Fahrenheit</button>
+            <button onclick="FahrenheitToCelcius()">Fahrenheit para Celcius</button>
+            <button onclick="celsiusToKelvin()">Celcius para Kelvin</button>
+            <button onclick="kelvinToCelcius()">Kelvin para Celcius</button>
+            <button onclick="FahrenheitToKelvin()">Fahrenheit para Kelvin</button>
+            <button onclick="kelvinToFahrenheit()">Kelvin para Fahrenheit</button>
+        </div>
+
+        <footer>
+            <p>Conversor de valores - Por Carolina Abreu</p>
+            <a href="https://github.com/CarolinaAbreu19"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ana-carolina-silva-abreu-80325a195/"><i
+                    class="fab fa-linkedin-in"></i></a>
+
+        </footer>
+
+
+    </div>
+
+
+</body>
+
+</html>

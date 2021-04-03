@@ -1,0 +1,78 @@
+body {
+    margin: 0px;
+    font-family: 'Open Sans';
+}
+
+button {
+    border: none;
+    background-color: #ff6347;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 15px;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #ff856f;
+}
+
+.mainContent {
+    border: 1px solid;
+    text-align: center;
+}
+
+.mainContent header {
+    font-family: 'Dela Gothic One';
+    padding: 5%;
+    font-size: 30px;
+    background-color: teal;
+    color: #ffffff;
+}
+
+.mainContent footer {
+    display: inline-flexbox;
+    flex-flow: row;
+    padding: 30px;
+    background-color: teal;
+    color: #ffffff;
+}
+
+.mainContent footer p {
+    padding-top: 10px;
+}
+
+.mainContent footer a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    color: #ffffff;
+}
+
+.box {
+    margin: 10px;
+    padding: 10px;
+}
+
+#convertMoney {
+    display: block;
+}
+
+#convertData {
+    display: none;
+}
+
+#convertTemperature {
+    display: none;
+}
+
+.navbar {
+    background-color: #202020;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+}
+
+@media screen and (max-height: 450px) {
+    button {margin: 15px;}
+}
