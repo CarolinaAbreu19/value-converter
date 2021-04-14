@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Unidades</title>
+    <title>Value converter</title>
 
     <script src="./convertMoney.js"></script>
     <script src="./convertData.js"></script>
@@ -26,10 +26,10 @@
     <nav class="sidenav" id="sidenav">
         <a href="javacript:void(0)" class="btnClose" onclick="closeNav()">&times;</a>
 
-        <p>O que deseja converter?</p>
-        <a href="#" onclick="convertMoney()">Dinheiro</a>
-        <a href="#" onclick="convertData()">Dados</a>
-        <a href="#" onclick="convertTemperature()">Temperatura</a>
+        <p>What do you want to convert?</p>
+        <a href="#" onclick="convertMoney()">Money</a>
+        <a href="#" onclick="convertData()">Data</a>
+        <a href="#" onclick="convertTemperature()">Temperature</a>
     </nav>
 
     <div class="navbar">
@@ -41,48 +41,49 @@
     <div class="mainContent" id="main">
 
         <header>
-            <h1>Conversão de valores</h1>
+            <h1>Value Converter</h1>
         </header>
 
-        <div class="box">
-            <h2>Escolha um valor para iniciar a conversão</h2>
-            <h3 id="answer"></h3>
-        </div>
-
-
-        <div class="box convertMoney" id="convertMoney">
-            <button onclick="convertDolarToReal()">Dólar para Real</button>
-            <button onclick="convertRealToDolar()">Real para Dólar</button>
-            <button onclick="convertEuroToReal()">Euro para Real</button>
-            <button onclick="convertRealToEuro()">Real para Euro</button>
-            <button onclick="convertBolivarToReal()">Bolívar para Real</button>
-            <button onclick="convertRealToBolivar()">Real para Bolívar</button>
-        </div>
-
-        <div class="box convertData" id="convertData">
-            <button onclick="convertMBtoGB()">MB para GB</button>
-            <button onclick="convertGBtoMB()">GB para MB</button>
-            <button onclick="convertMBtoB()">MB para B</button>
-            <button onclick="convertBtoMB()">B para MB</button>
-            <button onclick="convertBtoBits()">B para bits</button>
-            <button onclick="convertBitstoB()">bits para B</button>
-        </div>
-
-        <div class="box convertTemperature" id="convertTemperature">
-            <button onclick="celsiusToFahrenheit()">Celcius para Fahrenheit</button>
-            <button onclick="FahrenheitToCelcius()">Fahrenheit para Celcius</button>
-            <button onclick="celsiusToKelvin()">Celcius para Kelvin</button>
-            <button onclick="kelvinToCelcius()">Kelvin para Celcius</button>
-            <button onclick="FahrenheitToKelvin()">Fahrenheit para Kelvin</button>
-            <button onclick="kelvinToFahrenheit()">Kelvin para Fahrenheit</button>
+        <div class="display">
+            <div class="box">
+                <h2>Choose a value to start the conversion</h2>
+                <h3 id="answer"></h3>
+            </div>
+    
+    
+            <div class="box convertMoney" id="convertMoney">
+                <button onclick="convertDolarToReal()">Dollar to Real</button>
+                <button onclick="convertRealToDolar()">Real to Dollar</button>
+                <button onclick="convertEuroToReal()">Euro to Real</button>
+                <button onclick="convertRealToEuro()">Real to Euro</button>
+                <button onclick="convertBolivarToReal()">Bolivar to Real</button>
+                <button onclick="convertRealToBolivar()">Real to Bolivar</button>
+            </div>
+    
+            <div class="box convertData" id="convertData">
+                <button onclick="convertMBtoGB()">MB to GB</button>
+                <button onclick="convertGBtoMB()">GB to MB</button>
+                <button onclick="convertMBtoB()">MB to B</button>
+                <button onclick="convertBtoMB()">B to MB</button>
+                <button onclick="convertBtoBits()">B to bits</button>
+                <button onclick="convertBitstoB()">bits to B</button>
+            </div>
+    
+            <div class="box convertTemperature" id="convertTemperature">
+                <button onclick="celsiusToFahrenheit()">Celcius to Fahrenheit</button>
+                <button onclick="FahrenheitToCelcius()">Fahrenheit to Celcius</button>
+                <button onclick="celsiusToKelvin()">Celcius to Kelvin</button>
+                <button onclick="kelvinToCelcius()">Kelvin to Celcius</button>
+                <button onclick="FahrenheitToKelvin()">Fahrenheit to Kelvin</button>
+                <button onclick="kelvinToFahrenheit()">Kelvin to Fahrenheit</button>
+            </div>
         </div>
 
         <footer>
-            <p>Conversor de valores - Por Carolina Abreu</p>
-            <a href="https://github.com/CarolinaAbreu19"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/ana-carolina-silva-abreu-80325a195/"><i
+            <p>Value Converter - Carolina Abreu</p>
+            <a href="https://github.com/CarolinaAbreu19" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ana-carolina-silva-abreu-80325a195/" target="_blank"><i
                     class="fab fa-linkedin-in"></i></a>
-
         </footer>
 
 
