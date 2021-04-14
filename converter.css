@@ -73,6 +73,11 @@ button:hover {
     padding: 10px;
 }
 
+.display {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media screen and (max-height: 450px) {
     button {margin: 15px;}
 }

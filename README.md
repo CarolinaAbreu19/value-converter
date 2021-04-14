@@ -1,4 +1,10 @@
-# value-converter
-A simple value converter using HTML, CSS and JavaScript
+# Value Converter
+A simple value converter made with HTML, CSS and JavaScript.
 
-To run the project, just open the file converter.html
+![Alt text](./images/value-converter.png?raw=true "Title")
+
+After downloading, just run the `converter.html` file in the same directory to view the project.
+
+## Contact
+
+Carolina Abreu - [Linkedin](https://www.linkedin.com/in/ana-carolina-silva-abreu-80325a195/) - anacarolinaks19@gmail.com
